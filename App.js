@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // COMPONENTS
 import PeoplePage from './src/pages/PeoplePage'
+import PersonDetail from './src/pages/PersonDetail'
 
 const Stack = createNativeStackNavigator()
 
@@ -28,6 +29,11 @@ export default function App() {
 					name='people'
 					component={PeoplePage}
 					options={{ title: 'People' }}
+				/>
+				<Stack.Screen
+					name='person'
+					component={PersonDetail}
+					options={({ route }) => ({ title: route.params.fullName })}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

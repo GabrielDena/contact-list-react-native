@@ -1,7 +1,7 @@
 {
    "expo": {
-      "name": "contact_list",
-      "slug": "contact_list",
+      "name": "contact-list-react-native",
+      "slug": "contact-list-react-native",
       "version": "1.0.0",
       "orientation": "portrait",
       "icon": "./assets/icon.png",
